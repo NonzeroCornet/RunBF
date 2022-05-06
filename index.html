@@ -3,11 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      href="/logo.svg"
-      type="image/svg+xml"
-    />
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
     <title>RunBF - The Online BrainF*ck Compiler</title>
     <link rel="canonical" href="https://runbf.tk/" />
     <meta
@@ -22,10 +18,7 @@
       property="og:description"
       content="Compile and run BF online for free, in the worlds most simple brainf*ck compiler online."
     />
-    <meta
-      property="og:image"
-      content="/logo.svg"
-    />
+    <meta property="og:image" content="/logo.svg" />
     <script src="/script.js" defer></script>
   </head>
 
@@ -47,9 +40,18 @@
           onkeyup="updateCode()"
         ></textarea
         ><br />
-        <button onclick="run()">Run</button>
+        <div id="mobileBtnHandler">
+          <button onclick="run()" style="margin-right: 5px">Run</button
+          ><button onclick="toggleHide()" style="margin-left: 5px">
+            ToggleEdit
+          </button>
+        </div>
       </div>
     </center>
-    <p />
+    <p>
+      Welcome to the online BF compiler! Press "R" to run code, and press "E" to
+      toggle the code editor! The output will be shown here on the side. Happy
+      coding!<br />
+    </p>
   </body>
 </html>
