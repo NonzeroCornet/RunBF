@@ -4,7 +4,8 @@ if (location.protocol != "https:") {
 }
 var input = document.getElementsByTagName("textarea")[0];
 var output = document.getElementsByTagName("p")[0];
-var code = "";
+var code =
+  "++++++++++++++++++++++++++++++++++++++++++++++++.+.+.+.+.+.+.+.+.+.[-]";
 var mobileBtnHandler = document.getElementById("mobileBtnHandler");
 
 const ua = navigator.userAgent;
